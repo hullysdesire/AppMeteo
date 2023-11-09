@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+}
+
+.badge-title{
+    margin: 100px;
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+  height: 500px; /* Ajustez la hauteur selon vos besoins */
+  background-image: url(../asset/télécharger.jpg);
+  background-size: cover; /* Ajustez la taille de l'image pour couvrir tout le conteneur */
+  animation: fadeInOut 10s infinite alternate; /* Ajustez la durée et le comportement de l'animation selon vos besoins */
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.3; /* Opacité au début et à la fin de l'animation */
+  }
+  50% {
+    opacity: 1; /* Opacité au milieu de l'animation */
+  }
+}
+
+
+
+.badge-title h1, h3 {
+    text-align: center;
+}
+
+
+form{
+    width: 350px;
+    margin: 0 auto;
+}
+
+.element-temps1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+.element-temps2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.box-element{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+
+.boite-box{
+    width: 500px;
+    margin: 0 auto;
+}
+
+button{
+    width: 200px;
+}
