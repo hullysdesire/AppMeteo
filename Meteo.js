@@ -15,10 +15,10 @@ fetch(url).then((response) => response.json() // faire la demande de recherche d
 
 
     // Permet de recuperer les elements qui sont dans le html et leur donner des bvaleurs deps
-     document.querySelector('#ville').innerHTML = "<i class='fa-solid fa-earth-africa'></i>" + data.name;
-     document.querySelector('#humidite').innerHTML = "<i class='fa-solid fa-bridge-water'></i> " + data.main.humidity;
-     document.querySelector('#vent').innerHTML = "<i class='fa-solid fa-droplet'></i>" + data.wind.speed + '%';
-     document.querySelector('#temp').innerHTML = "<i class='fa-solid fa-temperature-low'></i>" + data.main.temp + 'Km/h';
+     document.querySelector('#ville').innerHTML =  data.name;
+     document.querySelector('#humidite').innerHTML = "<i class='fa-solid fa-droplet'></i> " + data.main.humidity  + '%';
+     document.querySelector('#vent').innerHTML = "<i class='fa-solid fa-wind'></i> " + data.wind.speed + 'Km/h';
+     document.querySelector('#temp').innerHTML = "<i class='fa-solid fa-temperature-three-quarters'></i> " + data.main.temp + '¤';
 
     })
 )
